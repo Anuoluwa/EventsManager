@@ -3,12 +3,7 @@
     opacity:0.8;
 
 }
-#home-section {
-    background: url('../img/') no-repeat;
-    min-height: 700px;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 /* .dark-overlay{
     background-color: rgba(0,0,0,0.7);
     position: absolute;
@@ -18,6 +13,12 @@
     min-height: 700px;
 } */
 
-.home-inner{
-    padding-top: 150px;
+.view-inner{
+    padding-top: 100px;
 }
+
+.green { color: #003300 !important; }
+.bold { font-weight: bold; }
+.thumbnail { min-height: 210px; }
+.pad-left { margin-left: 10px; }
+.well div  { color: #bbb; }
