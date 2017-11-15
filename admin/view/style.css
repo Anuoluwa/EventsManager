@@ -4,21 +4,15 @@
 
 }
 
-/* .dark-overlay{
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    min-height: 700px;
-} */
+.button{
+    padding-top: 10px;
+}
 
 .view-inner{
     padding-top: 100px;
 }
 
-.green { color: #003300 !important; }
-.bold { font-weight: bold; }
-.thumbnail { min-height: 210px; }
-.pad-left { margin-left: 10px; }
-.well div  { color: #bbb; }
+body{
+    background-color:whitesmoke;
+    color: #2286c3;
+}
