@@ -38,34 +38,40 @@
         <div class="text-center"><strong><h2>Create Event</h2></strong></div>
         <hr>
             <div class="row h-100 justify-content-center align-items-center ">
-                <form>
-                    <div class="form-group">
-                        <label for="name"><strong>Event Name</strong></label>
-                        <input type="text" class="form-control"  placeholder="Event Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="description"><strong>Purpose of Event</strong></label>
-                        <input type="text" class="form-control"  placeholder="description">
-                    </div>
-                    <div class="form-group">
-                        <label for=""><strong>Number of Guests</strong> </label>
-                        <input type="text" class="form-control"  placeholder="number of guests">
-                    </div>
-                    <div class="form-group">
-                            <label for=""><strong>Event Date</strong> </label>
-                            <div class='input-group date' id='datetimepicker1'>
-                                <input type='text' class="form-control" />
-                                <span class="input-group-addon">
-                                    <span class="fa fa-calendar"></span>
-                                </span>
-                            </div>
-                    </div>
+                <div class="col-md-6">
+                        <form>
+                                <div class="form-group">
+                                    <label for="name"><strong>Event Name</strong></label>
+                                    <input type="text" class="form-control"  placeholder="event Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="description"><strong>Purpose of Event</strong></label>
+                                    <input type="text" class="form-control"  placeholder="purpose of event..">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""><strong>Number of Guests</strong> </label>
+                                    <input type="text" class="form-control"  placeholder="number of guests">
+                                </div>
+                                <div class="form-group">
+                                        <label for=""><strong>Date</strong> </label>
+                                        <input type="date" class="form-control"  placeholder="date of event">
+                                </div>
+            
+                                <div class="form-group">
+                                        <label for=""><strong>Time</strong> </label>
+                                        <input type="time" class="form-control"  placeholder="time of event">
+                                </div>
+                                <div>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="submit" class="btn btn-primary">Cancel</button>
+                                </div>
+                            </form>
 
-                    <div>
-                            <button type="submit" class="btn btn-success">Submit</button>
-                            <button type="submit" class="btn btn-primary">Cancel</button>
-                    </div>
-                </form>
+
+
+
+                </div>
+                
             </div>
         </div>
     </div>
