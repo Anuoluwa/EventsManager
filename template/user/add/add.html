@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Event Manager</title>
+    <title>EventManager</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+            $(function () {
+                 $('#datetimepicker1').datetimepicker();
+            });
+    </script>
 </head>
 <body>
     
@@ -26,10 +32,46 @@
            </div>
         </div>
     </nav>
+    <!-- user add -->
+    <div class="add-inner">
+        <div class="container h-100">
+        <div class="text-center"><strong><h2>Create Event</h2></strong></div>
+        <hr>
+            <div class="row h-100 justify-content-center align-items-center ">
+                <form>
+                    <div class="form-group">
+                        <label for="name"><strong>Event Name</strong></label>
+                        <input type="text" class="form-control"  placeholder="Event Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="description"><strong>Purpose of Event</strong></label>
+                        <input type="text" class="form-control"  placeholder="description">
+                    </div>
+                    <div class="form-group">
+                        <label for=""><strong>Number of Guests</strong> </label>
+                        <input type="text" class="form-control"  placeholder="number of guests">
+                    </div>
+                    <div class="form-group">
+                            <label for=""><strong>Event Date</strong> </label>
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                </span>
+                            </div>
+                    </div>
+
+                    <div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" class="btn btn-primary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    
-
 </body>
 </html>
