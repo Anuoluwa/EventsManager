@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EventManager</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-
-    <script>
-            $(function () {
-                 $('#datetimepicker1').datetimepicker();
-            });
-    </script>
 </head>
+
 <body>
-    
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container">
-           <a href="index.html" class="navabr-brand">Event Manager</a> 
-           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
-               <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarCollapse">
-               <ul class="navbar-nav ml-auto">
+            <a href="index.html" class="navabr-brand">EventsManager</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                            <a href="" class=" nav-link">Sign Out</a>
+                        <a href="" class=" nav-link">Sign Out</a>
                     </li>
-               </ul>
-           </div>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- user add -->
     <div class="add-inner">
         <div class="container h-100">
-        <div class="text-center"><strong><h2>Create Event</h2></strong></div>
-        <hr>
+            <div class="text-center">
+                <strong>
+                    <h2>Create Event</h2>
+                </strong>
+            </div>
+            <hr>
             <div class="row h-100 justify-content-center align-items-center ">
                 <div class="col-md-6">
-                        <form action="../detailpage/detailpage.html">
-                                <div class="form-group">
-                                    <label for="name"><strong>Event Name</strong></label>
-                                    <input type="text" class="form-control"  placeholder="event Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="description"><strong>Purpose of Event</strong></label>
-                                    <input type="text" class="form-control"  placeholder="purpose of event..">
-                                </div>
-                                <div class="form-group">
-                                    <label for=""><strong>Number of Guests</strong> </label>
-                                    <input type="text" class="form-control"  placeholder="number of guests">
-                                </div>
-                                <div class="form-group">
-                                        <label for=""><strong>Date</strong> </label>
-                                        <input type="date" class="form-control"  placeholder="date of event">
-                                </div>
-            
-                                <div class="form-group">
-                                        <label for=""><strong>Time</strong> </label>
-                                        <input type="time" class="form-control"  placeholder="time of event">
-                                </div>
-                                <div>
-                                        <button type="submit" class="btn btn-success">Submit</button>
-                                        <button type="submit" class="btn btn-primary">Cancel</button>
-                                </div>
-                            </form>
+                    <form action="../detailpage/detailpage.html">
+                        <div class="form-group">
+                            <label for="name">
+                                <strong>Event Name</strong>
+                            </label>
+                            <input type="text" class="form-control" placeholder="event Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">
+                                <strong>Purpose of Event</strong>
+                            </label>
+                            <input type="text" class="form-control" placeholder="purpose of event..">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <strong>Number of Guests</strong>
+                            </label>
+                            <input type="text" class="form-control" placeholder="number of guests">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <strong>Date</strong>
+                            </label>
+                            <input type="date" class="form-control" placeholder="date of event">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">
+                                <strong>Time</strong>
+                            </label>
+                            <input type="time" class="form-control" placeholder="time of event">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" class="btn btn-primary">Cancel</button>
+                        </div>
+                    </form>
 
 
 
 
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -81,7 +93,7 @@
             <div class="row">
                 <div class="col text-center ">
                     <div class="py-4">
-                        <h1 class="h3">EventManager</h1>
+                        <h1 class="h3">EventsManager</h1>
                         <p>Copyright &copy; 2017</p>
                         <button class="btn btn-primary">Contact Us</button>
                     </div>
@@ -89,10 +101,14 @@
             </div>
         </div>
     </footer>
-   
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
