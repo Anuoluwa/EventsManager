@@ -4,13 +4,11 @@ body{
     color: #fff;
 
 }
-
 .navbar{
     border-bottom:#008ed6 3px solid;
     opacity:0.8;
 
 }
-
 #home-section {
     background: url('../img/homme.jpg') no-repeat;
     min-height: 700px;
@@ -25,7 +23,6 @@ body{
     width:100%;
     min-height: 700px;
 }
-
 .home-inner{
     padding-top: 150px;
 }

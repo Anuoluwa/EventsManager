@@ -1,230 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event Manager</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-                <div class="container">
-                   <a href="index.html" class="navabr-brand">EventManager</a> 
-                   <nav class="nav">
-                        <a class="nav-link" href="#">All Center</a>
-                        <a class="nav-link" href="../add/add.html">Create Center</a>
-                    </nav>
-                   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
-                       <span class="navbar-toggler-icon"></span>
-                   </button>
-                        
-                   <div class="collapse navbar-collapse" id="navbarCollapse">
-                       <ul class="navbar-nav ml-auto">
-                            <form class="form-inline my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="text" placeholder="search name or facilities">
-                                    <button class="btn btn-outline-success" type="button">Search</button>
-                            </form>
-                           <li class="nav-item">
-                               <a href="./../../user/signup/index.html" class=" nav-link">Sign Out</a>
-                           </li>
-                       </ul>
-                   </div>
-                </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navabr-brand">EventsManager</a>
+            <nav class="nav">
+                <a class="nav-link" href="#">All Center</a>
+                <a class="nav-link" href="../add/add.html">Create Center</a>
             </nav>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="search name or facilities">
+                        <button class="btn btn-outline-success" type="button">Search</button>
+                    </form>
+                    <li class="nav-item">
+                        <a href="./../../user/signup/index.html" class=" nav-link">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- View  Section -->
     <section id="view-section">
-                <div class="view-inner">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-md-12">
-                                    <h1>Centers</h1>
-                                    <hr/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="../details/details.html">
-                                        <div class="card border-info mb-3" style="max-width: 30rem;" >
-                                                <div class="card-body">
-                                                        <h2 class="card-title">Banquet Centre</h2>
-                                                        
-                                                        <div><span>Description: <strong> Executive banquet hall with theatre</strong></span></div>
-                                                        <div>
-                                                            Facilities:
-                                                            <strong>
-                                                                    <span>Projectors, Stage, Changing Room</span>
-                                                                    <span>Tables, Chairs, Air Conditioner </span>
-                                                            </strong>
-                                                           
-                                                        </div>
-                                                        <div>Capacity: <strong> 300 Guests </strong></div>
-                                                        <div>Price: <strong>NGN456,678 </strong> </div>
-                                                        
-                                                        <div class=" button float-right">   
-                                                                <div>
-                                                                    <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
-                                                                    <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-
-                                </a>
-                                       
-                            </div>
-                            <div class="col-lg-6">
-                                    <div class="card border-info mb-3" style="max-width: 30rem;" >
-                                        <div class="card-body">
-                                                <h2 class="card-title">Andela Conference</h2>
-                                                <div><span>Description: <strong>Conference Centre with rooms for teams</strong> </span></div>
-                                                <div >
-                                                    Facilities:
-                                                    <strong>
-                                                            <span>Projector, Stage, Changing Room</span>
-                                                            <span>Tables, Chairs, Air Conditioner </span>
-                                                    </strong>
-                                                    
-                                                </div>
-                                                <div>Capacity: <strong>500 Guests</strong>  </div>
-                                                <div>Price: <strong>NGN456,678</strong>  </div>
-                                                <div class=" button float-right">   
-                                                        <div>
-                                                            <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
-                                                            <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
-                                                        </div>
-                                                </div>
-                                        </div>   
-                                    </div>       
-                            </div>
-                        </div>
-
-                        <div class="row">
-                                <div class="col-lg-6">
-                                        <div class="card border-info mb-3" style="max-width: 30rem;" >
-                                            <div class="card-body">
-                                                    <h2 class="card-title">Andela Marque</h2>
-                                                    <div><span>Description: <strong>Centre with two floors and centre stage</strong>  </span></div>
-                                                    <div >
-                                                        Facilities:
-                                                        <strong> 
-                                                            <span>Projector, Stage, Changing Room</span>
-                                                            <span>Tables, Chairs, Air Conditioner </span>
-                                                        </strong>
-                                                    </div>
-                                                    <div>Capacity: <strong> 900 Guests</strong> </div>
-                                                    <div>Price: <strong>NGN905,678</strong>  </div>                                           
-                                                    <div class=" button float-right">   
-                                                            <div>
-                                                                <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
-                                                                <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
-                                                            </div>
-                                                    </div>
-                                            </div>    
-                                </div>
-                                </div>
-                                <div class="col-lg-6">
-                                        <div class="card border-info mb-3" style="max-width: 30rem;" >
-                                            <div class="card-body">
-                                                    <h2 class="card-title">Andela Hall</h2>
-                                                    <div><span>Description: <strong> Multi-purposehall with buttery</strong></span></div>
-                                                    <div >
-                                                        Facilities:
-                                                        <strong>
-                                                                <span>Projector, Stage, Changing Room</span>
-                                                                <span>Tables, Chairs, Air Conditioner</span>
-                                                        </strong>
-                                                    </div>
-                                                    <div>Capacity: <strong>600 Guests</strong>  </div>
-                                                    <div>Price: <strong>NGN856,678</strong></div>                                                
-                                                    <div class=" button float-right">   
-                                                            <div>
-                                                                <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
-                                                                <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
-                                                            </div>
-                                                    </div>
-                                            </div>     
-                                       </div>
-                                </div>
-                            </div>
-
-                        <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="card border-info mb-3" style="max-width: 30rem;" >
-                                            <div class="card-body">
-                                                    <h2 class="card-title">Big Hall</h2>
-                                                    <div><span>Description: <strong> Multi-purpose hall with additional floors</strong> </span></div>
-                                                    <div >
-                                                        Facilities:
-                                                        <strong>
-                                                                <span>Projector, Stage, Changing Room</span>
-                                                                <span>Tables, Chairs, Air Conditioner </span>
-                                                        </strong>
-                                                    </div>
-                                                    <div>Capacity: <strong>1000 Guests</strong> </div>
-                                                    <div>Price: <strong>NGN1,456,678</strong></div>
-                                                    <div class=" button float-right">   
-                                                            <div>
-                                                                <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
-                                                                <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
-                                                            </div>
-                                                    </div>
-
-                                            </div>        
-                                </div>
-        
-                                </div>
-                                <div class="col-lg-6">
-                                        <div class="card border-info mb-3" style="max-width: 30rem;" >
-                                            <div class="card-body">
-                                                    <h2 class="card-title">Auditorium</h2>
-                                                    <div><span>Description: <strong>Auditorium with Cinema settings</strong> </span></div>
-                                                    <div >
-                                                        Facilities:
-                                                        <strong>
-                                                                <span>Projector, Stage, Changing Room</span>
-                                                                <span>Tables, Chairs, Air Conditioner </span>
-                                                        </strong>
-                                                        
-                                                    </div>
-                                                    <div>Capacity: <strong>1100 Guests </strong></div>
-                                                    <div>Price: <strong>NGN 1,856,678</strong> </div>                                                <div  >
-                                                    </div> 
-                                                    <div class=" button float-right">   
-                                                        <div>
-                                                            <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
-                                                            <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
-                                                        </div>
-                                                    </div>
-                                                
-                                            </div>       
-                                    </div>
-                                </div>
-    
-                            </div>
+        <div class="view-inner">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <h1>Centers</h1>
+                        <hr/>
                     </div>
                 </div>
-        </section>
- <!-- footer -->
- <footer id="main-footer" class="bg-dark text-white">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="../details/details.html">
+                            <div class="card border-info mb-3" style="max-width: 30rem;">
+                                <div class="card-body">
+                                    <h2 class="card-title">Banquet Centre</h2>
+
+                                    <div>
+                                        <span>Description:
+                                            <strong> Executive banquet hall with theatre</strong>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        Facilities:
+                                        <strong>
+                                            <span>Projectors, Stage, Changing Room</span>
+                                            <span>Tables, Chairs, Air Conditioner </span>
+                                        </strong>
+
+                                    </div>
+                                    <div>Capacity:
+                                        <strong> 300 Guests </strong>
+                                    </div>
+                                    <div>Price:
+                                        <strong>NGN456,678 </strong>
+                                    </div>
+
+                                    <div class=" button float-right">
+                                        <div>
+                                            <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-info mb-3" style="max-width: 30rem;">
+                            <div class="card-body">
+                                <h2 class="card-title">Andela Conference</h2>
+                                <div>
+                                    <span>Description:
+                                        <strong>Conference Centre with rooms for teams</strong>
+                                    </span>
+                                </div>
+                                <div>
+                                    Facilities:
+                                    <strong>
+                                        <span>Projector, Stage, Changing Room</span>
+                                        <span>Tables, Chairs, Air Conditioner </span>
+                                    </strong>
+
+                                </div>
+                                <div>Capacity:
+                                    <strong>500 Guests</strong>
+                                </div>
+                                <div>Price:
+                                    <strong>NGN456,678</strong>
+                                </div>
+                                <div class=" button float-right">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-info mb-3" style="max-width: 30rem;">
+                            <div class="card-body">
+                                <h2 class="card-title">Andela Marque</h2>
+                                <div>
+                                    <span>Description:
+                                        <strong>Centre with two floors and centre stage</strong>
+                                    </span>
+                                </div>
+                                <div>
+                                    Facilities:
+                                    <strong>
+                                        <span>Projector, Stage, Changing Room</span>
+                                        <span>Tables, Chairs, Air Conditioner </span>
+                                    </strong>
+                                </div>
+                                <div>Capacity:
+                                    <strong> 900 Guests</strong>
+                                </div>
+                                <div>Price:
+                                    <strong>NGN905,678</strong>
+                                </div>
+                                <div class=" button float-right">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-info mb-3" style="max-width: 30rem;">
+                            <div class="card-body">
+                                <h2 class="card-title">Andela Hall</h2>
+                                <div>
+                                    <span>Description:
+                                        <strong> Multi-purposehall with buttery</strong>
+                                    </span>
+                                </div>
+                                <div>
+                                    Facilities:
+                                    <strong>
+                                        <span>Projector, Stage, Changing Room</span>
+                                        <span>Tables, Chairs, Air Conditioner</span>
+                                    </strong>
+                                </div>
+                                <div>Capacity:
+                                    <strong>600 Guests</strong>
+                                </div>
+                                <div>Price:
+                                    <strong>NGN856,678</strong>
+                                </div>
+                                <div class=" button float-right">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-info mb-3" style="max-width: 30rem;">
+                            <div class="card-body">
+                                <h2 class="card-title">Big Hall</h2>
+                                <div>
+                                    <span>Description:
+                                        <strong> Multi-purpose hall with additional floors</strong>
+                                    </span>
+                                </div>
+                                <div>
+                                    Facilities:
+                                    <strong>
+                                        <span>Projector, Stage, Changing Room</span>
+                                        <span>Tables, Chairs, Air Conditioner </span>
+                                    </strong>
+                                </div>
+                                <div>Capacity:
+                                    <strong>1000 Guests</strong>
+                                </div>
+                                <div>Price:
+                                    <strong>NGN1,456,678</strong>
+                                </div>
+                                <div class=" button float-right">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-info mb-3" style="max-width: 30rem;">
+                            <div class="card-body">
+                                <h2 class="card-title">Auditorium</h2>
+                                <div>
+                                    <span>Description:
+                                        <strong>Auditorium with Cinema settings</strong>
+                                    </span>
+                                </div>
+                                <div>
+                                    Facilities:
+                                    <strong>
+                                        <span>Projector, Stage, Changing Room</span>
+                                        <span>Tables, Chairs, Air Conditioner </span>
+                                    </strong>
+
+                                </div>
+                                <div>Capacity:
+                                    <strong>1100 Guests </strong>
+                                </div>
+                                <div>Price:
+                                    <strong>NGN 1,856,678</strong>
+                                </div>
+                                <div>
+                                </div>
+                                <div class=" button float-right">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-success ml-auto">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger ml-auto">Delete</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="main-footer" class="bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col text-center ">
                     <div class="py-4">
-                        <h1 class="h3">EventManager</h1>
+                        <h1 class="h3">EventsManager</h1>
                         <p>Copyright &copy; 2017</p>
                         <button class="btn btn-primary">Contact Us</button>
                     </div>
                 </div>
             </div>
         </div>
-</footer>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
