@@ -18,10 +18,10 @@ Given you manage an events center, this app will help you accept applications to
 
 
 ### OVERVIEW
-* Challenge 1*: UI Templates
-* Challenge 2*: Setup Server-Side & Create API Endpoints
-* Challenge 3*: Secure The API, Integrate A Database	
-* Challenge 4*: Implement Front-end Using React / Redux.
+*Challenge 1*: UI Templates
+*Challenge 2*: Setup Server-Side & Create API Endpoints
+*Challenge 3*: Secure The API, Integrate A Database	
+*Challenge 4*: Implement Front-end Using React / Redux.
 
 ** This document will always be updated after completion of each challenge**
 
@@ -57,7 +57,7 @@ As a requirement Bootstrap 4 in implementing the mockup pages, these distinct fo
 You can see each page by accessing each folder, also you can easily navigate from page to page, by following the laid down steps below.
 
 ###### Navigation
-* This is implemented based on above mentioned user stories in ascending order*
+*This is implemented based on above mentioned user stories in ascending order*
 * Open the **user** folder and open the *index.html* file which is in **signup** folder
 ** The user sign up page doubles as the home page**
 * Click on **Submit button or Signin on nav bar**  this takes to you to the next page
@@ -68,6 +68,6 @@ You can see each page by accessing each folder, also you can easily navigate fro
 * You can hit the **Submit** button to see other pages.
 * This return a page where admin can view, modify and remove centers.
 * Now,to view the detail page where you can see a **center and events** related to it, **Click on the Banquet Center card on the page** the first card from left.
-** Other cards are not linked to this page**
+**Other event item cards are not linked to any page**
 
 Thank you.
