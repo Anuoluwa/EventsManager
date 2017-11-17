@@ -18,10 +18,10 @@ Given you manage an events center, this app will help you accept applications to
 
 
 ### OVERVIEW
-*Challenge 1*: UI Templates
-*Challenge 2*: Setup Server-Side & Create API Endpoints
-*Challenge 3*: Secure The API, Integrate A Database	
-*Challenge 4*: Implement Front-end Using React / Redux.
+* Challenge 1*: UI Templates
+* Challenge 2*: Setup Server-Side & Create API Endpoints
+* Challenge 3*: Secure The API, Integrate A Database	
+* Challenge 4*: Implement Front-end Using React / Redux.
 
 ** This document will always be updated after completion of each challenge**
 
