@@ -28,6 +28,7 @@ This project is broken down into challenges and completion of all phases would c
 	* template
 
 # Challenge 1 : UI Templates
+The static files are hosted on GitHub Pages, from a separate repository.
 **Link to the templates : https://anuoluwa.github.io/EventManager/index.html**
 
 ###### Prerequisites
