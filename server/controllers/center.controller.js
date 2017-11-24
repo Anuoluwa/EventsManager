@@ -1,15 +1,17 @@
-import { center } from '../model/center.model'
-import { server } from './server.js';
-import { router } from './router.js';
+import express from 'express';
+import router from '../routes';
+import app from '../server';
+import center from '../model/center.model'
 
+export default class Center {
+    // constructor(request, response) {
+    // //     this.request = request;
+    // //     this.response = response;
 
+    // // }
+    // }
 
-export class Center {
-    constructor() {
-
-    }
-
-    getCenters (request, response) {
+   static getCenters (request, response) {
         if (!centers) {
             response.status(404).json({
                 message: 'No centers found'
@@ -18,23 +20,23 @@ export class Center {
         response.json(centers);
     }
 
-    getCenter(request, response) {
+   static getCenter(request, response) {
         const requestId = request.params.id;
 
-        let center = centers.filter(center => {
-            return center.id == requestId;
+        let center = centers.filter(centers => {
+            return centers.id == requestId;
         })
 
-        if (!center) {
+        if (!centers) {
             response.status(404).json({
                 message: 'No center found'
             });
         }
 
-        response.json(center[0])
+        response.json(centers[0])
     }
 
-    createCenter (request, response) {
+    static createCenter (request, response) {
 
         const center = {
             id: centers.length + 1,
@@ -45,14 +47,14 @@ export class Center {
         }
         centers.push(center);
 
-        response.json(center);
+        response.json(centers);
 
     }
 
-    editCenter (request, response) {
+    static editCenter (request, response) {
         const requestId = request.params.id;
 
-        let center = centers.filter(center => {
+        let center = center.filter(center => {
             return center.id == requestId;
         })[0];
 
@@ -70,11 +72,11 @@ export class Center {
         response.json(centers[index]);
     }
 
-    deleteCenter (request, response) {
+    static deleteCenter (request, response) {
         const requestId = request.params.id;
 
         let center = centers.filter(center => {
-            return center.id == requestId;
+            return centers.id == requestId;
         })[0];
 
         const index = centers.indexOf(center);
