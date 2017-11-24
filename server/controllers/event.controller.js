@@ -1,22 +1,20 @@
+import express from 'express';
+import router from '../routes';
+import app from '../server';
+import events from '../model/event.model';
 
-import { event } from '../model/event.model'
-import { Server } from './server.js';
-import { Router } from './router.js';
 
  
 //const express = require('express'),
    // router = express.Router();
 
-export class Event {
-    constructor() {
+export default class Event {
+    // constructor() {
 
-    }
+    // }
 
-    showHome (request, response) {
-        response.send('Hello oooorld////')
-    }
 
-    getEvents (request, response) {
+    static getEvents (request, response) {
         if (!events) {
             response.status(404).json({
                 message: 'No events found'
@@ -25,26 +23,25 @@ export class Event {
         response.json(events);
     }
 
-    getEvent(request, response) {
+    static getEvent(request, response) {
         const requestId = request.params.id;
 
         let event = events.filter(event => {
             return event.id == requestId;
         })
 
-        if (!event) {
+        if (!events) {
             response.status(404).json({
                 message: 'No event found'
             });
         }
 
-        response.json(event[0])
+        response.json(events[0])
     }
 
-    createEvent (request, response) {
-
+    static createEvent (request, response) {
         const event = {
-            id: events.length + 1,
+            id: events.length + 1,    
             name: request.body.name,
             purpose: request.body.purpose,
             date: request.body.date,
@@ -55,11 +52,11 @@ export class Event {
         }
         events.push(event);
 
-        response.json(event);
+        response.json(events);
 
     }
 
-    editEvent (request, response) {
+    static editEvent (request, response) {
         const requestId = request.params.id;
 
         let event = events.filter(event => {
@@ -80,7 +77,7 @@ export class Event {
         response.json(events[index])
     }
 
-    deleteEvent (request, response) {
+    static deleteEvent (request, response) {
         const requestId = request.params.id;
 
         let event = events.filter(event => {
