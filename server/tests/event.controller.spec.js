@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = 'tests';
 
 
 let event = require('../models/event.model');
