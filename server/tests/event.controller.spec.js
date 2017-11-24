@@ -1,12 +1,21 @@
+import { chai } from 'chai';
+import { expect } from 'chai';
+import { expect } from 'chai-http';
+import { should } from 'chai';
+import { server } from './server';
+import { Event } from '../controllers/event.controller.js';
+
+
 process.env.NODE_ENV = 'tests';
 
 
-let event = require('../models/event.model');
 
-let chai = require('chai');
-let chaiHttp = require('chai-http');
-let server = require('../server');
-let should = chai.should();
+// let event = require('../models/event.model');
+
+// let chai = require('chai');
+// let chaiHttp = require('chai-http');
+// let server = require('../server');
+// let should = chai.should();
 
 chai.use(chaiHttp);
 
@@ -31,14 +40,14 @@ describe('Events', () => {
   describe('/POST event', () => {
       it('it should not POST an event with empty field', (done) => {
         let event = {
-            id: 1,
-            name: "JavaScript Conference",
-            purpose: "Career and Leadership conference",
-            date: "24-11-2017",
-            duration: " 7 Days",
-            time: "9:00 am",
-            guests: 234,
-            center: "Marquee"
+            'id': 1,
+            'name': 'JavaScript Conference',
+            'purpose': 'Career and Leadership conference',
+            'date': '24-11-2017',
+            'duration': '7 Days',
+            'time': '9:00 am',
+            'guests': 234,
+            'center': 'Marquee'
         }
             chai.request(server)
             .post('/events')
@@ -54,14 +63,14 @@ describe('Events', () => {
       });
       it('it should POST an event ', (done) => {
         let event = {
-            id: 1,
-            name: "JavaScript Conference",
-            purpose: "Career and Leadership conference",
-            date: "24-11-2017",
-            duration: " 7 Days",
-            time: "9:00 am",
-            guests: 234,
-            center: "Marquee"
+            'id': 1,
+            'name': 'JavaScript Conference',
+            'purpose': 'Career and Leadership conference',
+            'date': '24-11-2017',
+            'duration': ' 7 Days',
+            'time': '9:00 am',
+            'guests': 234,
+            'center': 'Marquee'
         }  
         chai.request(server)
             .post('/events')
@@ -83,7 +92,7 @@ describe('Events', () => {
   });
   describe('/GET/:id event', () => {
       it('it should GET an eventk by the given id', (done) => {
-        let event = new Event(new Event({name: "Python Conference", purpose: "Developers Meetup",date: "3-11-2017",duration: "3 Days",guests: "345",center: "Hall"})
+        let event = new Event(new Event({name: 'Python Conference', purpose: 'Developers Meetup',date: '3-11-2017',duration: '3 Days',guests: '345',center: 'Hall'})
     );
         event.save((error, event) => {
             chai.request(server)
@@ -109,11 +118,11 @@ describe('Events', () => {
   });
   describe('/PUT/:id event', () => {
       it('it should UPDATE an event given the id', (done) => {
-        let event = new Event({name: "Python Conference", purpose: "Developers Meetup",date: "3-11-2017",duration: "3 Days",guests: "345",center: "Hall"})
+        let event = new Event({name: 'Python Conference', purpose: 'Developers Meetup',date: '3-11-2017',duration: '3 Days',guests: '345',center: 'Hall'})
         event.save((error, event) => {
                 chai.request(server)
                 .put('/events/' + event.id)
-                .send(new Event({name: "Python Conference", purpose: "Developers Meetup",date: "3-11-2017",duration: "3 Days",guests: "345",center: "Hall"})
+                .send(new Event({name: 'Python Conference', purpose: 'Developers Meetup',date: '3-11-2017',duration: '3 Days',guests: '345',center: 'Hall'})
             )
                 .end((error, response) => {
                     response.should.have.status(200);
